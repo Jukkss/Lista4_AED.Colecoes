@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIsta4_AED.Colecoes", "LIsta4_AED.Colecoes\LIsta4_AED.Colecoes.csproj", "{6D5F2808-A07C-49C0-8E39-874A4334CFC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questão 2", "Questão 2\Questão 2.csproj", "{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6D5F2808-A07C-49C0-8E39-874A4334CFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5F2808-A07C-49C0-8E39-874A4334CFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5F2808-A07C-49C0-8E39-874A4334CFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
