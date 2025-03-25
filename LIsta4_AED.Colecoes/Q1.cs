@@ -13,6 +13,7 @@ namespace LIsta4_AED.Colecoes
         {
             List <double> tempo = new List<double> ();
 
+            Console.WriteLine("Op:");
             int op = int.Parse(Console.ReadLine());
             do
             {
@@ -20,47 +21,54 @@ namespace LIsta4_AED.Colecoes
                 {
                     case 1:
                         double resTem = double.Parse(Console.ReadLine());
-                        tempo.Insert(1, resTem);
-                        Console.WriteLine($"Op:\n{op}\n{resTem}");
-                    break;
+                        tempo.Insert(0, resTem);
+                        Console.WriteLine($"{op}\n{resTem}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 2:
                         resTem = double.Parse (Console.ReadLine());
-                        tempo.Insert(tempo.Count-1, resTem);
-                        Console.WriteLine($"Op:\n{op}\n{resTem}");
-                    break;
+                        tempo.Add(resTem);
+                        Console.WriteLine($"{op}\n{resTem}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 3:
                         resTem = double.Parse (Console.ReadLine());
                         int resPos = int.Parse(Console.ReadLine());
                         tempo.Insert(resPos, resTem );
-                        Console.WriteLine($"Op:\n{op}\n{resTem}\n{resPos}");
-                    break;
+                        Console.WriteLine($"{op}\n{resTem}\n{resPos}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 4:
                         double tempPos = tempo[0];
                         tempo.Remove(tempo[0]);
-                        Console.WriteLine($"Op:\n{op}\n{tempPos}");
-                    break;
+                        Console.WriteLine($"{op}\n{tempPos}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 5:
                         tempPos = tempo[tempo.Count-1];
                         tempo.Remove (tempo[tempo.Count-1]);
-                        Console.WriteLine($"Op:\n{op}\n{tempPos}");
-                    break;
+                        Console.WriteLine($"{op}\n{tempPos}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 6:
                         resPos = int.Parse(Console.ReadLine()); 
                         tempPos = tempo[resPos];
                         tempo.Remove(tempPos);
-                        Console.WriteLine($"Op:\n{op}\n{resPos}\n{tempPos}");
-                    break;
+                        Console.WriteLine($"{op}\n{resPos}\n{tempPos}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 7:
                         double temRmv = double.Parse (Console.ReadLine());
                         tempo.Remove(tempo.IndexOf(temRmv));
-                        Console.WriteLine($"Op:\n{op}\n{temRmv}");
-                    break;
+                        Console.WriteLine($"{op}\n{temRmv}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 8:
                         double tempPesq = double.Parse (Console.ReadLine());
@@ -72,35 +80,39 @@ namespace LIsta4_AED.Colecoes
                                 rept++;
                             }
                         }
-                        Console.WriteLine($"Op:\n{op}\n{tempPesq}\n{rept}");
-                    break;
+                        Console.WriteLine($"{op}\n{tempPesq}\n{rept}");
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 9:
-                        Console.WriteLine($"Op:\n{op}");
+                        Console.WriteLine($"{op}");
                         foreach(double temps in tempo)
                         {
                             Console.WriteLine(temps);
                         }
-                    break;
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 10:
                         tempo.Sort();
-                        Console.WriteLine($"Op:\n{op}");
+                        Console.WriteLine($"{op}");
                         foreach (double temps in tempo)
                         {
                             Console.WriteLine(temps);
                         }
-                    break;
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 11:
                         tempo.Sort();
                         tempo.Reverse();
-                        Console.WriteLine($"Op:\n{op}");
+                        Console.WriteLine($"{op}");
                         foreach (double temps in tempo)
                         {
                             Console.WriteLine(temps);
                         }
-                    break;
+                        op = int.Parse(Console.ReadLine());
+                        break;
 
                     case 12:
                         break;
