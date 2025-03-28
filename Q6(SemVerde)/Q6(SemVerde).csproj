@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE22F09D-0984-4CFD-ACD2-CAFE197F6FF6}</ProjectGuid>
+    <ProjectGuid>{B3BFC32C-45C8-445D-A81D-B2CC5402C8F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Questão_2</RootNamespace>
-    <AssemblyName>Questão 2</AssemblyName>
+    <RootNamespace>Q6_SemVerde_</RootNamespace>
+    <AssemblyName>Q6%28SemVerde%29</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Q2Verde.cs" />
+    <Compile Include="Q6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
